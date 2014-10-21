@@ -1,0 +1,13 @@
+<h3>一覧</h3>
+
+<ul>
+  <%= for blog <- @blogs do %>
+    <li>
+      <%= blog.title %>
+    </li>
+  <% end %>
+</ul>
+
+<a href="/blog/new" class="btn btn-primary">
+  New blog
+</a>
