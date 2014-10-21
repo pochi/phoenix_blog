@@ -1,0 +1,31 @@
+2014-10-21 18:52:49.660 [info] <0.7.0> Application lager started on node nonode@nohost
+2014-10-21 18:52:49.660 [info] <0.7.0> Application exlager started on node nonode@nohost
+2014-10-21 18:52:49.667 [info] <0.7.0> Application decimal started on node nonode@nohost
+2014-10-21 18:52:49.669 [info] <0.7.0> Application poolboy started on node nonode@nohost
+2014-10-21 18:52:49.669 [info] <0.7.0> Application ecto started on node nonode@nohost
+2014-10-21 18:52:49.686 [info] <0.7.0> Application ecto exited with reason: stopped
+2014-10-21 18:52:49.686 [info] <0.7.0> Application poolboy exited with reason: stopped
+2014-10-21 18:52:49.686 [info] <0.7.0> Application decimal exited with reason: stopped
+2014-10-21 18:52:49.687 [info] <0.7.0> Application exlager exited with reason: stopped
+2014-10-21 18:53:25.807 [error] <0.234.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.239.0> exit with reason normal in context child_terminated
+2014-10-21 18:53:25.841 [info] <0.7.0> Application lager started on node nonode@nohost
+2014-10-21 18:53:25.842 [info] <0.7.0> Application exlager started on node nonode@nohost
+2014-10-21 18:53:25.849 [info] <0.7.0> Application decimal started on node nonode@nohost
+2014-10-21 18:53:25.851 [info] <0.7.0> Application poolboy started on node nonode@nohost
+2014-10-21 18:53:25.851 [info] <0.7.0> Application ecto started on node nonode@nohost
+2014-10-21 18:53:25.889 [info] <0.7.0> Application blog started on node nonode@nohost
+2014-10-21 18:56:11.593 [error] <0.186.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.191.0> exit with reason normal in context child_terminated
+2014-10-21 18:56:11.664 [info] <0.7.0> Application lager started on node nonode@nohost
+2014-10-21 18:56:11.665 [info] <0.7.0> Application exlager started on node nonode@nohost
+2014-10-21 18:56:11.678 [info] <0.7.0> Application decimal started on node nonode@nohost
+2014-10-21 18:56:11.680 [info] <0.7.0> Application poolboy started on node nonode@nohost
+2014-10-21 18:56:11.681 [info] <0.7.0> Application ecto started on node nonode@nohost
+2014-10-21 18:56:11.752 [info] <0.7.0> Application blog started on node nonode@nohost
+2014-10-21 18:56:21.005 [warning] <0.6.0> lager_error_logger_h dropped 63 messages in the last second that exceeded the limit of 50 messages/sec
+2014-10-21 18:59:01.169 [error] <0.186.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.191.0> exit with reason normal in context child_terminated
+2014-10-21 18:59:01.204 [info] <0.7.0> Application lager started on node nonode@nohost
+2014-10-21 18:59:01.204 [info] <0.7.0> Application exlager started on node nonode@nohost
+2014-10-21 18:59:01.220 [info] <0.7.0> Application decimal started on node nonode@nohost
+2014-10-21 18:59:01.223 [info] <0.7.0> Application poolboy started on node nonode@nohost
+2014-10-21 18:59:01.224 [info] <0.7.0> Application ecto started on node nonode@nohost
+2014-10-21 18:59:01.268 [info] <0.7.0> Application blog started on node nonode@nohost
