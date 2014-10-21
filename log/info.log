@@ -8,3 +8,54 @@
 19:11:30.608 [info] GET /blog
 19:11:30.660 [info] Hi, pochi
 19:11:30.762 [info] Sent 200 in 153ms
+19:20:04.210 [info] GET /blog/new
+19:20:04.273 [info] Sent 200 in 63ms
+19:20:08.452 [info] POST /blog
+19:20:08.971 [info] INSERT INTO "blogs" ("content", "title")
+VALUES ($1, $2)
+RETURNING "id"
+19:20:09.017 [info] SELECT b0."id", b0."title", b0."content"
+FROM "blogs" AS b0
+19:20:09.041 [info] Sent 200 in 588ms
+19:20:51.377 [info] GET /blog/new
+19:20:51.426 [info] Sent 200 in 48ms
+19:20:56.969 [info] POST /blog
+19:20:57.152 [error] **(ArgumentError) argument error
+    :erlang.++("[QUERY]", "INSERT INTO \"blogs\" (\"content\", \"title\")\nVALUES ($1, $2)\nRETURNING \"id\"")
+    (blog) lib/blog/repo.ex:15: Repo.log/2
+    (ecto) lib/ecto/adapters/postgres.ex:90: Ecto.Adapters.Postgres.insert/3
+    (ecto) lib/ecto/repo/backend.ex:88: Ecto.Repo.Backend.insert/4
+    (blog) web/controllers/blog_controller.ex:20: Blog.BlogController.create/2
+    (blog) web/controllers/blog_controller.ex:1: Blog.BlogController.phoenix_controller_stack/2
+    (phoenix) lib/phoenix/router/adapter.ex:89: Phoenix.Router.Adapter.dispatch/2
+    (blog) lib/phoenix/router.ex:2: Blog.Router.call/2
+
+
+19:20:57.153 [info] Sent 500 in 183ms
+19:21:11.114 [info] POST /blog
+19:21:11.165 [error] **(ArgumentError) argument error
+    :erlang.++("[QUERY]", "INSERT INTO \"blogs\" (\"content\", \"title\")\nVALUES ($1, $2)\nRETURNING \"id\"")
+    (blog) lib/blog/repo.ex:15: Repo.log/2
+    (ecto) lib/ecto/adapters/postgres.ex:90: Ecto.Adapters.Postgres.insert/3
+    (ecto) lib/ecto/repo/backend.ex:88: Ecto.Repo.Backend.insert/4
+    (blog) web/controllers/blog_controller.ex:20: Blog.BlogController.create/2
+    (blog) web/controllers/blog_controller.ex:1: Blog.BlogController.phoenix_controller_stack/2
+    (phoenix) lib/phoenix/router/adapter.ex:89: Phoenix.Router.Adapter.dispatch/2
+    (blog) lib/phoenix/router.ex:2: Blog.Router.call/2
+
+
+19:21:11.165 [info] Sent 500 in 51ms
+19:21:52.255 [info] GET /blog
+19:21:52.301 [info] Hi, pochi
+19:21:52.379 [info] [QUERY]SELECT b0."id", b0."title", b0."content"
+FROM "blogs" AS b0
+19:21:52.396 [info] Sent 200 in 140ms
+19:21:54.348 [info] GET /blog/new
+19:21:54.364 [info] Sent 200 in 15ms
+19:21:59.149 [info] POST /blog
+19:21:59.223 [info] [QUERY]INSERT INTO "blogs" ("content", "title")
+VALUES ($1, $2)
+RETURNING "id"
+19:21:59.244 [info] [QUERY]SELECT b0."id", b0."title", b0."content"
+FROM "blogs" AS b0
+19:21:59.245 [info] Sent 200 in 95ms
