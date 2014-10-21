@@ -1,0 +1,12 @@
+defmodule Blog.Supervisor do
+  use Supervisor
+
+  def start_link do
+    :supervisor.start_link(__MODULE__, [])
+  end
+
+  def init([]) do
+    tree = [worker(Repo, [])]
+    supervise(tree, stragegy: :one_for_one)
+  end
+end
