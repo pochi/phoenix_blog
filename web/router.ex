@@ -6,6 +6,8 @@ defmodule Blog.Router do
     pipe_through :browser
 
     get "/", Blog.PageController, :index, as: :pages
+
+    get "/blogs", Blog.BlogsController, :index
   end
 
   # Other scopes may use custom stacks.
