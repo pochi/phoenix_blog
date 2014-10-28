@@ -59,3 +59,57 @@ RETURNING "id"
 19:21:59.244 [info] [QUERY]SELECT b0."id", b0."title", b0."content"
 FROM "blogs" AS b0
 19:21:59.245 [info] Sent 200 in 95ms
+19:30:48.640 [info] GET /blog/new
+19:30:48.696 [info] Sent 200 in 55ms
+19:30:53.295 [info] POST /blog
+19:30:53.375 [info] [QUERY]INSERT INTO "blogs" ("content", "title")
+VALUES ($1, $2)
+RETURNING "id"
+19:30:53.402 [info] [QUERY]SELECT b0."id", b0."title", b0."content"
+FROM "blogs" AS b0
+19:30:53.402 [info] Sent 200 in 107ms
+10:22:06.368 [info] GET /blog
+10:22:06.422 [info] Hi, pochi
+10:22:06.453 [info] [QUERY]SELECT b0."id", b0."title", b0."content"
+FROM "blogs" AS b0
+10:22:06.455 [info] Sent 200 in 86ms
+12:34:34.402 [info] GET /
+12:34:34.495 [info] Sent 200 in 92ms
+12:34:35.471 [info] GET /favicon.ico
+12:34:35.498 [info] Sent 404 in 27ms
+12:34:42.302 [info] GET /blogs
+12:34:42.315 [info] Sent 404 in 12ms
+12:35:43.744 [info] GET /blog
+12:35:43.756 [info] Hi, pochi
+12:35:43.856 [error] **(Postgrex.Error) tcp connect: econnrefused
+    (ecto) lib/ecto/adapters/postgres/worker.ex:20: Ecto.Adapters.Postgres.Worker.query!/4
+    (ecto) lib/ecto/adapters/postgres.ex:353: Ecto.Adapters.Postgres.use_worker/3
+    (stdlib) timer.erl:165: :timer.tc/1
+    (blog) lib/blog/repo.ex:14: Repo.log/2
+    (ecto) lib/ecto/adapters/postgres.ex:67: Ecto.Adapters.Postgres.all/3
+    (blog) web/controllers/blog_controller.ex:11: Blog.BlogController.index/2
+    (blog) web/controllers/blog_controller.ex:1: Blog.BlogController.phoenix_controller_stack/2
+    (phoenix) lib/phoenix/router/adapter.ex:89: Phoenix.Router.Adapter.dispatch/2
+
+
+12:35:43.856 [info] Sent 500 in 111ms
+12:38:26.923 [info] GET /blog
+12:38:26.939 [info] Hi, pochi
+12:38:27.069 [info] [QUERY]SELECT b0."id", b0."title", b0."content"
+FROM "blogs" AS b0
+12:38:27.083 [info] Sent 200 in 159ms
+12:44:04.176 [info] GET /blog
+12:44:04.261 [info] Hi, pochi
+12:44:04.429 [info] [QUERY]SELECT b0."id", b0."title", b0."content"
+FROM "blogs" AS b0
+12:44:04.487 [info] Sent 200 in 310ms
+12:44:26.598 [info] GET /blog
+12:44:26.666 [info] Hi, pochi
+12:44:26.766 [info] [QUERY]SELECT b0."id", b0."title", b0."content"
+FROM "blogs" AS b0
+12:44:26.832 [info] Sent 200 in 233ms
+12:44:47.095 [info] GET /blog
+12:44:47.108 [info] Hi, pochi
+12:44:47.133 [info] [QUERY]SELECT b0."id", b0."title", b0."content"
+FROM "blogs" AS b0
+12:44:47.134 [info] Sent 200 in 38ms

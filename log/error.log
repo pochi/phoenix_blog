@@ -25,3 +25,14 @@
     (blog) lib/phoenix/router.ex:2: Blog.Router.call/2
 
 
+12:35:43.856 [error] **(Postgrex.Error) tcp connect: econnrefused
+    (ecto) lib/ecto/adapters/postgres/worker.ex:20: Ecto.Adapters.Postgres.Worker.query!/4
+    (ecto) lib/ecto/adapters/postgres.ex:353: Ecto.Adapters.Postgres.use_worker/3
+    (stdlib) timer.erl:165: :timer.tc/1
+    (blog) lib/blog/repo.ex:14: Repo.log/2
+    (ecto) lib/ecto/adapters/postgres.ex:67: Ecto.Adapters.Postgres.all/3
+    (blog) web/controllers/blog_controller.ex:11: Blog.BlogController.index/2
+    (blog) web/controllers/blog_controller.ex:1: Blog.BlogController.phoenix_controller_stack/2
+    (phoenix) lib/phoenix/router/adapter.ex:89: Phoenix.Router.Adapter.dispatch/2
+
+
